@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3Y8LQ3CMX5.Basic-Connections.Critique-Cinema"],
+        "components": [
+          { "/": "/r", "comment": "A shared review" },
+          { "/": "/r/*", "comment": "A shared review" }
+        ]
+      }
+    ]
+  }
+}

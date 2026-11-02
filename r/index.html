@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Required – Critique Cinema</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="center">
+    <p class="wordmark">Critique<br>Cinema</p>
+    <div class="laser"></div>
+
+    <div class="card">
+      <h1 style="margin-top:0;font-size:26px;">App required</h1>
+      <p>This review opens in the Critique Cinema app for iPhone, where you can compare it with your own and save the
+      title to your Watch Soon list.</p>
+      <a class="button" id="open" href="critiquecinema://r">Open in Critique Cinema</a>
+      <p class="muted" style="margin-top:18px;">Don't have the app yet? It's coming soon to the App Store.</p>
+    </div>
+
+    <footer><a href="/">About Critique Cinema</a> · <a href="/privacy.html">Privacy</a></footer>
+  </main>
+  <script>
+    // The shared review lives after the "#" and never reaches the server. Hand it to the app if it is installed.
+    document.getElementById("open").href = "critiquecinema://r" + window.location.hash;
+  </script>
+</body>
+</html>
